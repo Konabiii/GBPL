@@ -17,7 +17,7 @@ load_dotenv()
 st.set_page_config(page_title="Plant Diagnosis", layout="centered")
 
 # ---------- Firebase Init ----------
-FIREBASE_DB_URL = "https://gbpl-2341c-default-rtdb.asia-southeast1.firebasedatabase.app/"
+FIREBASE_DB_URL = ""
 if not firebase_admin._apps:
     cred_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
     if not cred_path or not os.path.exists(cred_path):
